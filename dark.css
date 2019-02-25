@@ -1,100 +1,76 @@
 :root:root {
-  --header-background-color: ${mainColor};
-  --message-box-container-border-color: ${borderColor};
-}
-.color-primary-font-color {
-  color: ${fontColor}
-}
-.content-background-color, .full-page, .loading-animation, .page-loading, body, html {
-  background-color: ${mainColor}
-}
-.message a {
-  color: ${linkFontColor}
-}
-.message a:hover {
-  color: ${linkHoverFontColor}
-}
-.message.new-day::before {
-  background-color: ${mainColor};
-  color: ${lightFontColor};
-}
-.message.new-day::after {
-  border-color: ${borderColor}
-}
-.background-component-color {
-  background-color: rgb(28, 30, 35);
-}
-input, select, textarea {
-  color: ${fontColor};
+  --badge-unread-background: rgb(8, 77, 179);
+  --popover-background: rgb(35, 39, 47);
+  --popover-item-color: var(--font-color);
+  --header-background-color: var(--main-color);
+  --header-title-username-color-darker: var(--font-color);
+  --message-box-container-border-color: var(--border-color);
+  --color-white: var(--main-color);
+
+  --sidebar-background: rgb(27, 29, 34);
+  --border-color: rgb(55, 55, 55);
+  --button-color: rgb(173, 219, 253);
+  --sidebar-unread: rgb(173, 219, 253);
+  --sidebar-active: rgb(35, 39, 47);
+  --font-color: rgb(193, 189, 182);
+  --font-hover: rgb(194, 190, 183);
+
+  --main-color: rgb(23, 24, 28);
+
+  --code-background: rgb(25, 26, 30);
+  --code-font: rgb(213, 210, 205);
 }
 
-/* Sidebar */
 .sidebar {
-  background-color: ${sidebarColor} !important;
-  border-right: 1px solid ${borderColor}
+  background-color: var(--sidebar-background) !important;
+  border-right: 1px solid var(--border-color);
 }
-.sidebar__toolbar-button {
-  color: ${lightFontColor} !important
-}
-.sidebar-item {
-  color: ${fontColor}
+.sidebar__toolbar-button,
+.rc-room-actions__action {
+  color: var(--button-color) !important;
 }
 .sidebar-item--unread {
-  color: ${lightFontColor} !important
+  color: var(--sidebar-unread) !important;
 }
-.sidebar-item--active, .sidebar-item:hover {
-  background-color: ${sidebarHoverColor} !important;
-  color: ${fontHoverColor} !important;
+.sidebar-item--active,
+.sidebar-item:hover,
+.sidebar-item__popup-active {
+  background-color: var(--sidebar-active) !important;
+  color: var(--font-hover) !important;
 }
-.rc-old .message.first-unread .body::after {
-  background-color: ${mainColor};
-  color: ${alertColor};
+.rooms-list__toolbar-search {
+  background-color: var(--sidebar-background);
 }
-.rc-popover__content {
-  background-color: ${mainColor};
-}
-.rc-popover__item {
-  color: ${fontColor};
-}
-
-/* Header */
-.rc-header__data {
-  color: ${fontColor}
-}
-.rc-room-actions__button {
-  color: ${lightFontColor} !important
-}
-.border-component-color {
-  border-color: ${borderColor};
-}
-.room-leader.message:hover {
-  background-color: ${mainColor};
-}
-.room-leader .chat-now {
-  text-decoration-color: initial;
-  color: ${mainColor};
-  border-color: ${borderColor};
+.toolbar .rc-input__element {
+  background-color: var(--sidebar-background);
+  border-color: var(--border-color);
+  color: var(--font-color);
 }
 
-/* Footer */
-.messages-container .footer, .rc-input__element {
-  background-image: initial;
-  background-color: ${mainColor};
-  border-color: ${borderColor};
+.content-background-color {
+  background-color: var(--main-color);
 }
-
-/* Context pane */
-.contextual-bar,
-.rc-user-info-container,
+.color-primary-font-color {
+  color: var(--font-color);
+}
+.messages-container .footer,
+.message.new-day::before,
+.message.new-day::after,
+.rc-input__element {
+  background-color: var(--main-color);
+  border-color: var(--border-color);
+}
+textarea {
+  color: var(--font-color);
+}
 .rc-user-info-details {
-  background-color: ${mainColor};
+  background-color: var(--main-color);
 }
 
-/* Code block */
 .rc-old .code-colors {
-  color: ${blockFontColor};
-  border-color: ${borderColor};
-  background-color: ${blockColor};
+  color: var(--code-font);
+  border-color: var(--border-color);
+  background-color: var(--code-background);
 }
 .code-colors.hljs, .hljs {
   color: #abb2bf;
