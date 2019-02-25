@@ -1,6 +1,6 @@
 # rocket-dark
 
-##Usage
+Usage
 
 Advanced -> Custom code
 
