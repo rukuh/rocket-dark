@@ -69,8 +69,8 @@ textarea {
 .rc-user-info-details {
   background-color: var(--main-color);
 }
-.rc-modal {
-  background-color: var(--sidebar-color);
+.rc-modal, .rc-modal__footer {
+  background: var(--sidebar-color);
 }
 
 .rc-old .code-colors {
