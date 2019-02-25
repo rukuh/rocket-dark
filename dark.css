@@ -70,7 +70,7 @@ textarea {
   background-color: var(--main-color);
 }
 .rc-modal, .rc-modal__footer {
-  background: var(--sidebar-color);
+  background-color: var(--sidebar-color);
 }
 
 .rc-old .code-colors {
