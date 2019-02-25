@@ -77,7 +77,7 @@ textarea {
 }
 .code-colors.hljs, .hljs {
   color: #abb2bf;
-  background: var(--code-background)
+  background: #282c34
 }
 .hljs .hljs-comment, .hljs .hljs-quote {
   color: #5c6370;
