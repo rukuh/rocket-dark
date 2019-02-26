@@ -63,6 +63,9 @@
   background-color: var(--main-color);
   border-color: var(--border-color);
 }
+.first-unread .body::after {
+  background-color: var(--main-color);
+}
 .message-actions {
   color: var(--font-color);
 }
