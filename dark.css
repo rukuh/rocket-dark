@@ -38,9 +38,6 @@
   background-color: var(--sidebar-active) !important;
   color: var(--font-hover) !important;
 }
-.sidebar-item__menu {
-  color: var(--font-hover) !important;
-}
 .rooms-list__toolbar-search {
   background-color: var(--sidebar-background);
 }
