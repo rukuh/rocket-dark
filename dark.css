@@ -1,36 +1,39 @@
 :root:root {
+  /* override */
   --badge-unread-background: rgb(8, 77, 179);
-  --popover-background: rgb(35, 39, 47);
-  --popover-item-color: var(--font-color);
+  --chip-background: var(--sidebar-active);
+  --color-white: var(--main-color);
   --header-background-color: var(--main-color);
   --header-title-username-color-darker: var(--font-color);
+  --mention-link-background: var(--mention-link-group-background);
+  --mention-link-text-color: var(--mention-link-group-text-color);
   --message-box-container-border-color: var(--border-color);
-  --color-white: var(--main-color);
-
+  --popover-background: rgb(35, 39, 47);
+  --popover-item-color: var(--font-color);
   --sidebar-background: rgb(27, 29, 34);
+  /*--badge-group-mentions-background: ;*/
+
+  /* original */
   --border-color: rgb(55, 55, 55);
-  --button-color: rgb(173, 219, 253);
-  --sidebar-unread: rgb(173, 219, 253);
-  --sidebar-active: rgb(35, 39, 47);
-  --font-color: rgb(193, 189, 182);
-  --font-hover: rgb(194, 190, 183);
-
-  --main-color: rgb(23, 24, 28);
-
   --code-background: rgb(40, 44, 52);
   --code-font: rgb(213, 210, 205);
+  --font-color: rgb(193, 189, 182);
+  --font-hover: rgb(194, 190, 183);
+  --main-color: rgb(23, 24, 28);
+  --sidebar-active: rgb(35, 39, 47);
 }
 
+/* sidebar */
 .sidebar {
   background-color: var(--sidebar-background) !important;
-  border-right: 1px solid var(--border-color);
+  border-right-color: var(--border-color);
 }
 .sidebar__toolbar-button,
 .rc-room-actions__action {
-  color: var(--button-color) !important;
+  color: var(--font-color) !important;
 }
 .sidebar-item--unread {
-  color: var(--sidebar-unread) !important;
+  color: var(--font-color) !important;
 }
 .sidebar-item--active,
 .sidebar-item:hover,
@@ -46,7 +49,11 @@
   border-color: var(--border-color);
   color: var(--font-color);
 }
+.rc-tooltip--down:after {
+  color: var(--font-color);
+}
 
+/* main */
 .content-background-color {
   background-color: var(--main-color);
 }
@@ -66,27 +73,38 @@
 .first-unread .body::after {
   background-color: var(--main-color);
 }
-.mention-link,
-.message .mention-link,
-.mention-link--group,
-.message .mention-link--group {
-  background-color: var(--mention-link-group-background);
-  color: var(--mention-link-group-text-color);
+.message .title .is-bot, .message .title .role-tag {
+  background: var(--main-color);
+}
+.message .reactions>li {
+  background-color: var(--main-color);
+  border-color: var(--border-color);
 }
 .message-actions {
   color: var(--font-color);
 }
-.message .reactions>li {
-  background-color: var(--main-color);
-  border: 1px solid var(--border-color);
-}
 textarea {
   color: var(--font-color);
 }
+
+/* contextual bar */
+.contextual-bar__header {
+  background: var(--sidebar-background);
+}
 .rc-user-info-details {
-  background-color: var(--main-color);
+  background-color: var(--sidebar-background);
+}
+.chip-container__item, .chip-container li {
+  background-color:
+}
+.rc-button {
+  color: var(--font-color);
+}
+.rc-user-info-details__info {
+  color: var(--font-color);
 }
 
+/* code block */
 .rc-old .code-colors {
   color: var(--code-font);
   border-color: var(--border-color);
