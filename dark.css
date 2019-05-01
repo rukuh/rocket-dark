@@ -66,8 +66,18 @@
 .first-unread .body::after {
   background-color: var(--main-color);
 }
+.mention-link,
+.message .mention-link,
+.mention-link--group,
+.message .mention-link--group {
+  background-color: var(--mention-link-group-background);
+  color: var(--mention-link-group-text-color);
+}
 .message-actions {
   color: var(--font-color);
+}
+.message .reactions>li {
+  background-color: var(--main-color);
 }
 textarea {
   color: var(--font-color);
