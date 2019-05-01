@@ -78,6 +78,7 @@
 }
 .message .reactions>li {
   background-color: var(--main-color);
+  border: 1px solid var(--border-color);
 }
 textarea {
   color: var(--font-color);
