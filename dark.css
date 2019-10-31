@@ -44,7 +44,7 @@
 .rooms-list__toolbar-search {
   background-color: var(--sidebar-background);
 }
-.toolbar .rc-input__element {
+.rc-input__element, .toolbar .rc-input__element {
   background-color: var(--sidebar-background);
   border-color: var(--border-color);
   color: var(--font-color);
@@ -137,4 +137,9 @@ textarea {
 }
 .hljs .hljs-bullet, .hljs .hljs-link,.hljs .hljs-meta, .hljs .hljs-selector-id,.hljs .hljs-symbol, .hljs .hljs-title {
   color: #61aeee
+}
+
+/* eemoji-picker */
+.emoji-picker {
+  background-color: var(--main-color)
 }
