@@ -32,7 +32,8 @@
 .rc-room-actions__action {
   color: var(--font-color) !important;
 }
-.sidebar-item--unread {
+.sidebar-item--unread,
+.sidebar-item--unread .sidebar-item__message-top {
   color: var(--font-color) !important;
 }
 .sidebar-item--active,
@@ -69,6 +70,9 @@
 .rc-input__element {
   background-color: var(--main-color);
   border-color: var(--border-color);
+}
+.message.active, .message:hover {
+  background-color: var(--sidebar-active);
 }
 .first-unread .body::after {
   background-color: var(--main-color);
