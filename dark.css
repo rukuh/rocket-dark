@@ -2,6 +2,7 @@
   /* override */
   --badge-unread-background: rgb(8, 77, 179);
   --chip-background: var(--sidebar-active);
+  --color-gray-lightest: var(--border-color);
   --color-white: var(--main-color);
   --header-background-color: var(--main-color);
   --header-title-username-color-darker: var(--font-color);
@@ -11,7 +12,6 @@
   --popover-background: rgb(35, 39, 47);
   --popover-item-color: var(--font-color);
   --sidebar-background: rgb(27, 29, 34);
-  /*--badge-group-mentions-background: ;*/
 
   /* original */
   --border-color: rgb(55, 55, 55);
@@ -23,14 +23,17 @@
   --sidebar-active: rgb(35, 39, 47);
 }
 
+/* icons */
+.rc-icon,
+.rcx-icon,
+.rc-room-actions__action {
+  color: var(--font-color) !important;
+}
+
 /* sidebar */
 .sidebar {
   background-color: var(--sidebar-background) !important;
   border-right-color: var(--border-color);
-}
-.sidebar__toolbar-button,
-.rc-room-actions__action {
-  color: var(--font-color) !important;
 }
 .sidebar-item--unread,
 .sidebar-item--unread .sidebar-item__message-top {
@@ -99,13 +102,20 @@ textarea {
   background-color: var(--sidebar-background);
 }
 .chip-container__item, .chip-container li {
-  background-color:
+  background-color: var(--sidebar-background);
 }
 .rc-button {
   color: var(--font-color);
 }
 .rc-user-info-details__info {
   color: var(--font-color);
+}
+.rcx-box {
+  background-color: var(--sidebar-background) !important;
+}
+.rcx-vertical-bar > .rcx-box,
+.rcx-thread-view > .rcx-box {
+  background-color: var(--sidebar-background) !important;
 }
 
 /* code block */
