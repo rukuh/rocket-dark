@@ -23,40 +23,6 @@
   --sidebar-active: rgb(35, 39, 47);
 }
 
-/* icons */
-.rc-icon,
-.rcx-icon,
-.rc-room-actions__action {
-  color: var(--font-color) !important;
-}
-
-/* sidebar */
-.sidebar {
-  background-color: var(--sidebar-background) !important;
-  border-right-color: var(--border-color);
-}
-.sidebar-item--unread,
-.sidebar-item--unread .sidebar-item__message-top {
-  color: var(--font-color) !important;
-}
-.sidebar-item--active,
-.sidebar-item:hover,
-.sidebar-item__popup-active {
-  background-color: var(--sidebar-active) !important;
-  color: var(--font-hover) !important;
-}
-.rooms-list__toolbar-search {
-  background-color: var(--sidebar-background);
-}
-.rc-input__element, .toolbar .rc-input__element {
-  background-color: var(--sidebar-background);
-  border-color: var(--border-color);
-  color: var(--font-color);
-}
-.rc-tooltip--down:after {
-  color: var(--font-color);
-}
-
 /* main */
 .content-background-color {
   background-color: var(--main-color);
@@ -92,30 +58,6 @@
 }
 textarea {
   color: var(--font-color);
-}
-
-/* contextual bar */
-.contextual-bar__header {
-  background: var(--sidebar-background);
-}
-.rc-user-info-details {
-  background-color: var(--sidebar-background);
-}
-.chip-container__item, .chip-container li {
-  background-color: var(--sidebar-background);
-}
-.rc-button {
-  color: var(--font-color);
-}
-.rc-user-info-details__info {
-  color: var(--font-color);
-}
-.rcx-box {
-  background-color: var(--sidebar-background) !important;
-}
-.rcx-vertical-bar > .rcx-box,
-.rcx-thread-view > .rcx-box {
-  background-color: var(--sidebar-background) !important;
 }
 
 /* code block */
