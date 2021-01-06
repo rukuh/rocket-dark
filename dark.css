@@ -60,6 +60,30 @@ textarea {
   color: var(--font-color);
 }
 
+/* contextual bar */
+.contextual-bar__header {
+  background: var(--sidebar-background);
+}
+.rc-user-info-details {
+  background-color: var(--sidebar-background);
+}
+.chip-container__item, .chip-container li {
+  background-color: var(--sidebar-background);
+}
+.rc-button {
+  color: var(--font-color);
+}
+.rc-user-info-details__info {
+  color: var(--font-color);
+}
+.rcx-box {
+  background-color: var(--sidebar-background) !important;
+}
+.rcx-vertical-bar > .rcx-box,
+.rcx-thread-view > .rcx-box {
+  background-color: var(--sidebar-background) !important;
+}
+
 /* code block */
 .rc-old .code-colors {
   color: var(--code-font);
