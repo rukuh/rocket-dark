@@ -56,6 +56,12 @@
 .message-actions {
   color: var(--font-color);
 }
+.rcx-box {
+  color: var(--font-color) !important;
+}
+.rcx-divider {
+  border: .0625rem solid var(--rcx-divider-color) !important; 
+}
 textarea {
   color: var(--font-color);
 }
