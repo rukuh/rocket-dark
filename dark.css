@@ -1,69 +1,39 @@
 :root:root {
-  /* override */
-  --badge-unread-background: rgb(8, 77, 179);
-  --chip-background: var(--sidebar-active);
-  --color-gray-lightest: var(--border-color);
-  --color-white: var(--main-color);
-  --header-background-color: var(--main-color);
-  --header-title-username-color-darker: var(--font-color);
-  --mention-link-background: var(--mention-link-group-background);
-  --mention-link-text-color: var(--mention-link-group-text-color);
-  --message-box-container-border-color: var(--border-color);
-  --popover-background: rgb(35, 39, 47);
-  --popover-item-color: var(--font-color);
-  --sidebar-background: rgb(27, 29, 34);
-
   /* original */
   --border-color: rgb(55, 55, 55);
   --code-background: rgb(40, 44, 52);
   --code-font: rgb(213, 210, 205);
-  --font-color: rgb(193, 189, 182);
+  --font-color: rgb(158, 162, 168);
   --font-hover: rgb(194, 190, 183);
-  --main-color: rgb(23, 24, 28);
-  --sidebar-active: rgb(35, 39, 47);
+  --main-color: rgb(31, 35, 41);
+  --sidebar-active: rgb(47, 52, 61);
+
+  /* override */
+  --component-color: var(--sidebar-active);
+  --content-background-color: var(--main-color);
+  --flex-nav-background: var(--main-color);
+  --message-box-container-border-color: var(--border-color);
+  --popover-background: var(--main-color);
+  --popover-item-color: var(--font-color);
+  --primary-font-color: var(--font-color);
+  --rcx-color-foreground-default: var(--font-color);
+  --rcx-color-neutral-800: var(--font-color);
+  --rcx-color-surface: var(--main-color);
+  --rcx-tag-colors-default-background-color: var(--main-color);
 }
 
 /* main */
-.content-background-color {
+.emoji-picker {
   background-color: var(--main-color);
-}
-.color-primary-font-color {
-  color: var(--font-color);
-}
-.background-component-color {
-  background-color: var(--sidebar-background);
-}
-.messages-container .footer,
-.message.new-day::before,
-.message.new-day::after,
-.rc-input__element {
-  background-color: var(--main-color);
-  border-color: var(--border-color);
 }
 .message.active, .message:hover {
   background-color: var(--sidebar-active);
 }
-.first-unread .body::after {
-  background-color: var(--main-color);
+.rcx-box--full, .rcx-box--full:after, .rcx-box--full:before, .rcx-chip, .rcx-icon:not() {
+  border-color: var(--border-color) !important;
 }
-.message .title .is-bot, .message .title .role-tag {
-  background: var(--main-color);
-}
-.message .reactions>li {
-  background-color: var(--main-color);
-  border-color: var(--border-color);
-}
-.message-actions {
-  color: var(--font-color);
-}
-.rcx-box {
-  color: var(--font-color) !important;
-}
-.rcx-divider {
-  border: .0625rem solid var(--rcx-divider-color) !important; 
-}
-textarea {
-  color: var(--font-color);
+.main-content .rcx-divider {
+  border-color: var(--border-color) !important;
 }
 
 /* code block */
@@ -99,9 +69,4 @@ textarea {
 }
 .hljs .hljs-bullet, .hljs .hljs-link,.hljs .hljs-meta, .hljs .hljs-selector-id,.hljs .hljs-symbol, .hljs .hljs-title {
   color: #61aeee
-}
-
-/* eemoji-picker */
-.emoji-picker {
-  background-color: var(--main-color)
 }
